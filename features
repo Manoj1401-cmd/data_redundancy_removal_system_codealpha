@@ -1,0 +1,30 @@
+Redundancy Detection System:
+
+Cryptographic content hashing for exact duplicate detection
+Similarity scoring using Jaccard similarity for near-duplicates
+Configurable similarity threshold (90% by default)
+Validation Mechanism:
+
+Content validation rules (length, quality checks)
+Separate verification step before database insertion
+Thread-safe operations with locking
+Cloud Database Integration:
+
+SQLite database with unique constraints on content hashes
+Batch processing with parallel execution
+Statistics tracking for monitoring system performance
+False Positive Handling:
+
+Classification of entries as redundant or unique
+Different storage treatment for redundant vs unique data
+Detailed reasons for rejection
+Performance Optimizations:
+
+Content fingerprint caching
+Batch processing with ThreadPoolExecutor
+Connection pooling for database operations
+API Interface:
+
+Single item upload endpoint
+Batch upload endpoint
+Statistics endpoint for monitoring
