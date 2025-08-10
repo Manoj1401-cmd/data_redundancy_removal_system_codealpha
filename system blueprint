@@ -1,0 +1,5 @@
+System Architecture -
+DataValidator: Core validation logic and similarity checking
+RedundancyChecker: Main redundancy detection and database management
+CloudDatabaseAPI: Public interface for interacting with the system
+Thread-safe operations: All database and fingerprint operations are properly synchronized
